@@ -33,9 +33,9 @@ var controlador = {
     getResetStatus : () => {
         return model.needsReset;
     },
-    getPeticionChar: () => {
-        return model.textoPeticion[visualViewport.getPeticionLenght()-1];
-    },
+    // getPeticionChar: () => {
+    //     return model.textoPeticion[ver.getPeticionLenght()-1];
+    // },
     getAnswer: () => {
         const respuestaInvalida = [
             "No es manera de preguntar a Carlota",

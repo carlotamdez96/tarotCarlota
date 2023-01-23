@@ -103,7 +103,6 @@ span:nth-child(4n-3) { color:hsl(30, 65%, 60%); text-shadow:1px 1px hsl(30, 45%,
 .encabezado__respuesta{
     font-size: 1.5em;
 }
-
 @media (max-width: 480px) {
     .encabezado{
         height: 40vh;
