@@ -1,0 +1,194 @@
+
+.encabezado, .cuerpo{
+    font-family: var(--fuente-cuerpo);
+    overflow: hidden;
+}
+.encabezado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    gap: 30px;
+    background-color: var(--color-encabezado);
+    color: white;
+    
+    
+}
+
+.encabezado__titulo{
+    font-size: 4em;
+    font-family: var(--fuente-titulo);
+    user-select: none;
+   animation: squash 2s linear infinite;
+}
+
+
+@keyframes squash{
+	0%{transform:scale(1,1);}
+	50%{transform:scale(1,1.2);}
+	100%{transform:scale(1,1);}
+}
+
+
+span:nth-child(4n) { color:hsl(50, 75%, 55%); text-shadow:1px 1px hsl(50, 75%, 45%), 2px 2px hsl(50, 45%, 45%), 3px 3px hsl(50, 45%, 45%), 4px 4px hsl(50, 75%, 45%); }
+span:nth-child(4n-1) { color:hsl(135, 35%, 55%); text-shadow:1px 1px hsl(135, 35%, 45%), 2px 2px hsl(135, 35%, 45%), 3px 3px hsl(135, 35%, 45%), 4px 4px hsl(135, 35%, 45%); }
+span:nth-child(4n-2) { color:hsl(155, 35%, 60%); text-shadow:1px 1px hsl(155, 25%, 50%), 2px 2px hsl(155, 25%, 50%), 3px 3px hsl(155, 25%, 50%), 4px 4px hsl(140, 25%, 50%); }
+span:nth-child(4n-3) { color:hsl(30, 65%, 60%); text-shadow:1px 1px hsl(30, 45%, 50%), 2px 2px hsl(30, 45%, 50%), 3px 3px hsl(30, 45%, 50%), 4px 4px hsl(30, 45%, 50%); }
+
+
+
+
+.encabezado__parrafo{
+    width: 60%;
+    display: flex;
+    line-height: 30px;
+    font-size: 1.2em;
+    text-align: justify;
+}
+.cuerpo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    gap: 20px;
+}
+.parrafoPeticion__display{
+    width: 500px;
+    height: 40px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid var(--color-secundario);
+    outline: none;
+    font-size: 1.3em;
+    
+}
+.parrafoPregunta__display{
+    width: 400px;
+    height: 40px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid var(--color-secundario);
+    outline:none;
+    font-size: 1.3em;
+}
+.parrafoPregunta__boton,.cuerpo__botonReset{
+    width: 100px;
+    height: 40px;
+    border: none;
+    color: var(--color-icono);
+    background-color: transparent;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-right: 12px;
+    
+    
+}
+.parrafoPregunta__boton:hover, .cuerpo__botonReset:hover{
+    background-color: var(--color-clarito)
+}
+.boton__icono{
+    width: 30px;
+    color: var(--color-icono);
+    
+}
+
+/* Cuando se ejecute el javaScript, estilos para el span*/
+.encabezado__respuesta::first-line{
+    font-size: 1.1em;
+}
+.encabezado__respuesta{
+    font-size: 1.5em;
+}
+
+@media (max-width: 480px) {
+    .encabezado{
+        height: 40vh;
+        gap: 20px;
+        /* width: 100%; */
+        
+    }
+ .encabezado__titulo{
+    font-size: 2em;
+    /* height: 2vh; */
+ }
+ .encabezado__parrafo{
+    font-size: 1em;
+    line-height: 20px;
+    width: 80%;
+    height: 15vh;
+ }
+ .cuerpo{
+    height: 30vh;
+    gap: 10px;
+    overflow-y: hidden;
+}
+.parrafoPeticion__display{
+    width: 280px;
+    height: 30px;
+    font-size: .9em;
+    
+}
+.parrafoPregunta__display{
+    width: 200px;
+    height: 30px;
+    font-size: .9em;
+}
+.parrafoPregunta__boton,.cuerpo__botonReset{
+    width: 78px;
+    height: 30px;
+    font-size: .8em;    
+    
+}
+.boton__icono{
+    width: 15px;
+
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .encabezado{
+        height: 50vh;
+        gap: 25px;
+        
+    }
+    .encabezado__titulo{
+        font-size: 2em;
+        /* height: 2vh; */
+     }
+     .encabezado__parrafo{
+        font-size: 1em;
+        line-height: 20px;
+        width: 90%;
+        height: 15vh;
+     }
+     .cuerpo{
+        height: 50vh;
+        gap: 20px;
+    }
+    .parrafoPeticion__display{
+        width: 480px;
+        height: 30px;
+        font-size: .9em;
+        
+    }
+    .parrafoPregunta__display{
+        width: 400px;
+        height: 30px;
+        font-size: .9em;
+    }
+    .parrafoPregunta__boton,.cuerpo__botonReset{
+        width: 80px;
+        height: 30px;
+        font-size: .7em;    
+        
+    }
+    .boton__icono{
+        width: 20px;
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/daec488c78.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./hojasEstilos/reset.css">
+    <link rel="stylesheet" href="./hojasEstilos/variables.css">
+    <link rel="stylesheet" href="./hojasEstilos/estilos.css">
+    <title>Tarot Carlota</title>
+</head>
+<body>
+    <header class="encabezado">
+        <h1 class="encabezado__titulo">
+            <span>T</span>
+            <span>a</span>
+            <span>r</span>
+            <span>o</span>
+            <span>t</span>
+            <span>&nbsp </span>
+            <span>&nbsp </span>
+            <span>C</span>
+            <span>a</span>
+            <span>r</span>
+            <span>l</span>
+            <span>o</span>
+            <span>t</span>
+            <span>a</span>
+            
+           </h1>
+        <p class="encabezado__parrafo">Bienvenido al Tarot de Carlota.<br>
+            ¿Necesitas hacer una pregunta?¿Estás buscando respuestas? Carlota te ofrece el espacio para preguntar todo lo que quieras. Eso sí, antes de cada pregunta deberás escribir una petición. Y si la respuesta no es la que esperabas, al menos podrás hacer catarsis y volver a preguntar.
+Petición: Carlota por favor responde esta pregunta importante
+        </p>
+        
+        <span class="encabezado__respuesta"></span>
+    </header>
+    <article class="cuerpo">
+        <p class="cuerpo__parrafoPeticion"> <input type="text" class="parrafoPeticion__display" id="peticion" name="peticion" placeholder="Petición" required></p>
+       <p class="cuerpo__parrafoPregunta"><input type="text"class="parrafoPregunta__display" id="pregunta" name="pregunta" placeholder="Pregunta" required>
+        <button class="parrafoPregunta__boton"><i class="boton__icono fa-solid fa-share"></i>Enviar</button>
+    </p>
+        <button class="cuerpo__botonReset">Reset</button>
+        
+    </article>
+    <script src="./js/app.js"></script>
+</body>
+</html>

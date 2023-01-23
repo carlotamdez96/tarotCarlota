@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Source+Sans+Pro&display=swap');
+
+:root{
+    --color-encabezado:#DB0049ed;
+    --fuente-titulo:'Luckiest Guy', cursive;
+    --fuente-cuerpo:'Source Sans Pro', sans-serif;
+    --color-icono:#A80038;
+    --color-secundario:#E14478;
+    --color-oscuro:#5C1C31;
+    --color-clarito:#f49ebb42;
+
+}
